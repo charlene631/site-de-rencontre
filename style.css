@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    overflow: hidden;
+    margin: 20px;
+    padding: 20px;
+    scrollbar-color: #007BFF #f4f4f4; /* Couleur de la barre de défilement */
+    scrollbar-width: thin; /* Barre de défilement fine */
+    scrollbar-gutter: stable; /* Espace réservé pour la barre de défilement */
+    height: 100vh;  /* Utiliser 100vh pour la hauteur de la fenêtre */
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background-image: url(https://images.unsplash.com/photo-1617788472008-1e524a74cf25?q=80&w=1951&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.header{
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    position:sticky;
+    }
+
+h1 {
+    color: #007BFF;
+    text-align: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+nav ul li {
+    list-style: none; /* Supprime les puces */
+}
+
+nav ul li a {
+    text-decoration: none; /* Supprime le soulignement */
+    padding: 0; /* Supprime les marges internes */
+    margin: 0; /* Supprime les marges externes */
+}
+
+.footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Ensure items are in one column */
+    align-items: center; /* Center items vertically */
+    text-align: center;
+    position: sticky;
+    bottom: 0; /* Fixe le pied de page en bas */
+}
+
+.footer a {
+    text-decoration: none; /* Remove underline */
+    display: block; /* Ensure items stack vertically */
+    margin: 10px 0; /* Add spacing between items */
+    color: inherit; /* Ensure link color matches text color */
+}
