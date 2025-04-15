@@ -1,76 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Temps d'aimer</title>
-    <link rel="stylesheet" href="Assets/style.css">
-    
-    </head>
-    <body>
-    <style>
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav {
-            text-align: center;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Temps d'aimer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Le Temps d’Aimer logo v1.png" type="image/x-icon" />
+</head>
+<body>
 
-        nav ul li {
-            display: inline-block;
-            margin: 0 15px;
-        }
+  <div class="grid-container">
 
-        nav ul li a {
-            text-decoration: none;
-            color: inherit;
-        }
-    </style>
-
-    <!-- Navigation -->
-        <nav>
-            <ul>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
-            </ul>
-        </nav>
-    
     <!-- Header -->
-    <header>
-        <h1>Le Temps d'aimer</h1>
-        <img src="" alt="Logo de Le Temps d'aimer" width="250" height="200"class="logo-header">
+    <header class="header">
+      <h1 class="sr-only">Accueil</h1>
+      <div class="logo">
+        <img src="Le Temps d’Aimer logo v1.png" alt="Logo Le Temps d'aimer" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+      </nav>
     </header>
-    <style>
 
-        header h1 {
-            text-align: center;
-        }
-    </style>
-       <div>
+    <!-- Main -->
     <main>
-        <section>
-                <h2>Bienvenue sur Le Temps d'aimer</h2>
-                <div class="container">
-                <img
-                src=mindy-sabiston-9hgDf95TNO8-unsplash.jpgt alt="Image de la page d'accueil représentant un couple d'amoureux"
-                class="cover-image">
-                <div class="overlay">
-                    <p>Le Temps d'aimer est un site dédié à la rencontre et à l'amour. Nous vous offrons une plateforme sécurisée pour rencontrer des personnes partageant vos intérêts et vos sentiments.</p>
-            </div>
-            </main>
-        </section>
+      <section class="section-container">
+        <h2>Bienvenue sur Le Temps d'aimer</h2>
+        <img src="" alt="Couple d'amoureux" />
+        <p>
+          Le Temps d'aimer est un site dédié à la rencontre et à l'amour.
+          Nous vous offrons une plateforme sécurisée pour rencontrer des personnes
+          partageant vos intérêts et vos sentiments.
+        </p>
+      </section>
     </main>
 
     <!-- Footer -->
-    <footer>
-        <div class="footer-links">
-            <a href="#">À propos</a>
-            <a href="#">Contact</a>
-            <a href="#">Mentions légales</a>
-            <a href="#">RGPD</a>
-          </div>
-        <p>&copy; 2025 Le Temps d'aimer</p>
+    <footer class="footer">
+      <nav>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">RGPD</a>
+      </nav>
+      <p>&copy; 2025 Le Temps d'aimer</p>
     </footer>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
 </html>
