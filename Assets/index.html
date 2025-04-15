@@ -1,34 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Le Temps d'aimer</title>
-    <link rel="stylesheet" href="Assets/style.css">
-    
-    <body>
-    <nav>
-        <a href="#home">Inscription</a>
-        <a href="#about">Connexion</a>
-    </nav>
-    <header>
-        <h1>Le Temps d'aimer</h1>
-        <img src="logo.png" alt="Logo de Le Temps d'aimer" width="250" height="200"class="logo-header">
-        
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Le Temps d'aimer</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="Le Temps d’Aimer logo v1.png" type="image/x-icon" />
+</head>
+<body>
+
+  <div class="grid-container">
+
+    <!-- Header -->
+    <header class="header">
+      <h1 class="sr-only">Accueil</h1>
+      <div class="logo">
+        <img src="Le Temps d’Aimer logo v1.png" alt="Logo Le Temps d'aimer" />
+      </div>
+      <nav class="nav">
+        <ul>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+      </nav>
     </header>
+
+    <!-- Main -->
     <main>
-        <section>
-            <main>
-                <div class="container">
-                <img src="pexels-marcus-aurelius-6787970.jpg"alt="Image de la page d'accueil" class="cover-image">
-                <div class="overlay">
-                    <p>Le Temps d'aimer est un site dédié à la rencontre et à l'amour. Nous vous offrons une plateforme sécurisée pour rencontrer des personnes partageant vos intérêts.</p>
-                </div>
-            </main>
-        </section>
+      <section class="section-container">
+        <h2>Bienvenue sur Le Temps d'aimer</h2>
+        <img src="" alt="Couple d'amoureux" />
+        <p>
+          Le Temps d'aimer est un site dédié à la rencontre et à l'amour.
+          Nous vous offrons une plateforme sécurisée pour rencontrer des personnes
+          partageant vos intérêts et vos sentiments.
+        </p>
+      </section>
     </main>
-    <footer>
-        <p>&copy; 2025 Le Temps d'aimer</p>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <nav>
+        <a href="#">À propos</a>
+        <a href="#">Contact</a>
+        <a href="#">Mentions légales</a>
+        <a href="#">RGPD</a>
+      </nav>
+      <p>&copy; 2025 Le Temps d'aimer</p>
     </footer>
 
-<html>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
