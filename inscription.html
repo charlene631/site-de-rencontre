@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscription</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="logo.png" type="image/x-icon" />
+</head>
+<body>
+       <!-- Header -->
+       <header>
+        <div class="container">
+        <h1 class="sr-only">Test de personnalité</h1>
+        <img src="/assets/image/logo.png" alt="Logo Le Temps d'aimer" class="logo"/>
+  
+      <!-- Navigation --> 
+        <nav class="nav">
+          <ul>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+          </ul>
+        </nav>
+      </div>
+      </header>
+
+      <main>
+    <h2>Inscription - Site de Rencontre</h2>
+    <form action="submit_form.php" method="post">
+        <label for="username">Nom d'utilisateur:</label>
+        <input type="text" id="username" name="username" placeholder="Entrez votre nom" required>
+        <br><br>
+        
+        <label for="email" >Adresse e-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Entrez votre mail" required>
+        <br><br>
+        
+        <label for="password">Mot de passe:</label>
+        <input  type="password" id="password" name="password" placeholder="Entrez votre mot de passe" required>
+        <br><br>
+        
+        <label for="age">Âge:</label>
+        <input type="number" id="age" name="age" min="18" placeholder="Entrez votre âge" required>
+        <br><br>
+        
+        <label for="gender">Genre:</label>
+        <select id="gender" name="gender" required>
+            <option value="male">Homme</option>
+            <option value="female">Femme</option>
+            <option value="other">Autre</option>
+        </select>
+        <br><br>
+        
+        <label for="bio">Bio:</label>
+        <br>
+        <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Parlez-nous de vous..."></textarea>
+        <br><br>
+        
+        <button id="btn-inscription">Inscription</button>
+
+        <p id="message"></p>
+    </form>
+</main id="main-inscription">
+   
+    <footer class="footer">
+        <nav>
+          <a href="#">À propos</a>
+          <a href="#">Contact</a>
+          <a href="#">Mentions légales</a>
+          <a href="#">RGPD</a>
+        </nav>
+        <p>&copy; 2025 Le Temps d'aimer</p>
+      </footer>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
