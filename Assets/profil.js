@@ -12,7 +12,9 @@ const profils = [
     genre: "femme",
     ville: "Lyon",
     profession: "Architecte",
-    centresInteret: ["Voyages", "Peinture", "Lecture"]
+    centresInteret: ["Voyages", "Peinture", "Lecture"],
+    image: "assets/image/couple.jpg",
+    alt:"Couple",
    }, 
    {
     nom: "Pierre",
@@ -21,7 +23,9 @@ const profils = [
     genre: "homme",
     ville: "Marseille",
     profession: "Retraité",
-    centresInteret: ["Jardinage", "Échecs"]
+    centresInteret: ["Jardinage", "Échecs"],
+    image: "assets/image/couple.jpg",
+    alt:"Couple",
   },
    {
     nom: "Sophie",
@@ -30,7 +34,9 @@ const profils = [
     genre: "femme",
     ville: "Toulouse",
     profession: "Infirmière",
-    centresInteret: ["Yoga", "Cuisine végétarienne"]
+    centresInteret: ["Yoga", "Cuisine végétarienne"],
+    image: "assets/image/couple.jpg",
+    alt:"Couple",
   },
   {
     nom: "Jean",
@@ -39,7 +45,31 @@ const profils = [
     genre: "homme",
     ville: "Paris",
     profession: "Consultant",
-    centresInteret: ["Photographie", "Randonnée"]
+    centresInteret: ["Photographie", "Randonnée"],
+    image: "assets/image/couple.jpg",
+    alt:"Couple",
+  },
+  {
+    nom: "Jean",
+    prenom: "Leroy",
+    age: 67,
+    genre: "homme",
+    ville: "Paris",
+    profession: "Consultant",
+    centresInteret: ["Photographie", "Randonnée"],
+    image: "assets/image/couple.jpg",
+    alt:"Couple",
+  },
+  {
+    nom: "Jean",
+    prenom: "Leroy",
+    age: 67,
+    genre: "homme",
+    ville: "Paris",
+    profession: "Consultant",
+    centresInteret: ["Photographie", "Randonnée"],
+    image: "assets/image/couple.jpg",
+    alt:"Couple",
   }
 
 ];
@@ -47,6 +77,7 @@ profils.forEach(profil=> {
     const carte = document.createElement("div");
     carte.classList.add("carte");
     carte.innerHTML = `
+    <img src="${profil.image}" alt="${profil.alt}" />
     <h4>${profil.prenom} ${profil.nom}</h4>
     <p><strong>Âge :</strong> ${profil.age} ans</p>
     <p><strong>Ville :</strong> ${profil.ville}</p>
