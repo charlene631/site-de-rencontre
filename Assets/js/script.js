@@ -35,7 +35,7 @@ window.addEventListener('DOMContentLoaded', () => {
           message.style.color = "green";
 
           setTimeout(() => {
-              window.location.href = "catalogue.html";
+              window.location.href = "assets/pages/catalogue.html";
           }, 1000);
       } else {
           message.textContent = "Nom d'utilisateur ou mot de passe incorrect.";
