@@ -83,7 +83,7 @@ body {
   }
 
   .hero {
-    background-image: url(/assets/image/hero.png);
+    background-image: url("/assets/image/hero.png");
     background-size: cover;
     background-position: center;
     height: 60vh;
