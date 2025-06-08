@@ -13,7 +13,7 @@ const profils = [
     ville: "Lyon",
     profession: "Architecte",
     centresInteret: ["Voyages", "Peinture", "Lecture"],
-    image: "assets/image/couple.jpg",
+    image: "../image/couple.jpg",
     alt:"Couple",
    }, 
    {
@@ -24,7 +24,7 @@ const profils = [
     ville: "Marseille",
     profession: "Retraité",
     centresInteret: ["Jardinage", "Échecs"],
-    image: "assets/image/couple.jpg",
+    image: "../image/couple.jpg",
     alt:"Couple",
   },
    {
@@ -35,7 +35,7 @@ const profils = [
     ville: "Toulouse",
     profession: "Infirmière",
     centresInteret: ["Yoga", "Cuisine végétarienne"],
-    image: "assets/image/couple.jpg",
+    image: "../image/couple.jpg",
     alt:"Couple",
   },
   {
@@ -46,7 +46,7 @@ const profils = [
     ville: "Paris",
     profession: "Consultant",
     centresInteret: ["Photographie", "Randonnée"],
-    image: "assets/image/couple.jpg",
+    image: "../image/couple.jpg",
     alt:"Couple",
   },
   {
@@ -57,7 +57,7 @@ const profils = [
     ville: "Paris",
     profession: "Consultant",
     centresInteret: ["Photographie", "Randonnée"],
-    image: "assets/image/couple.jpg",
+    image: "../image/couple.jpg",
     alt:"Couple",
   },
   {
@@ -68,7 +68,7 @@ const profils = [
     ville: "Paris",
     profession: "Consultant",
     centresInteret: ["Photographie", "Randonnée"],
-    image: "assets/image/couple.jpg",
+    image: "../image/couple.jpg",
     alt:"Couple",
   }
 

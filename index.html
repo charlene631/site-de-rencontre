@@ -1,68 +1,80 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Temps d'aimer</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="image/tempsdaimerlogo.png" type="image/x-icon">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="shortcut icon" href="assets/image/tempsdaimerlogo.png" type="image/x-icon">
 </head>
+
 <body>
 
-    <!-- Header -->
-    <header>
-      <h1 class="sr-only">Accueil</h1>
-      <div class="container">
-        <img src="assets/image/tempsdaimerlogo.png" alt="Logo Le Temps d'aimer" class="logo">
-        
-        <!-- Navigation --> 
-        <nav class="nav">
-          <ul>
-            <li><a href="assets/pages/inscription.html">Inscription</a></li>
-            <li><a href="assets/pages/connexion.html">Connexion</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+  <!-- Header -->
+  <header>
+    <h1 class="sr-only">Accueil</h1>
+    <div class="container">
+      <a href="index.html">
+        <img src="assets/image/tempsdaimerlogo.png" alt="Logo" class="logo">
+      </a>
 
-    <!-- Main -->
-    <main class="main">
-      <section class="hero">
-        <div class="hero-content">
-          <h2>Bienvenue sur Le Temps d'aimer</h2>       
-          <p>Découvrez des profils compatibles avec vous</p>
-          <a href="assets/pages/catalogue.html" class="btn">
-            Voir le catalogue des célibataires
-          </a>
-        </div>        
-      </section>
-
-      <section id="a-propos">
-        <h3>Pourquoi Le Temps d’aimer ?</h3>
-        <p>Notre mission est de réunir les personnes compatibles dans un espace bienveillant.</p>
-      </section>
-      
-        <section class="temoignages">
-        <h3>Ils ont trouvé l’amour 💕</h3>
-        <!-- images, témoignages ou carrousel -->
-      </section>
-
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-      <nav>
-        <a href="#">Notre histoire</a>
-        <a href="assets/pages/contact.html">Contact</a>
-        <a href="assets/pages/mentionslegales.html">Mentions légales</a>
-        <a href="assets/pages/rgpd.html">RGPD</a>
+      <!-- Navigation -->
+      <nav class="nav">
+        <ul>
+          <li><a href="assets/pages/inscription.html">Inscription</a></li>
+          <li><a href="assets/pages/connexion.html">Connexion</a></li>
+        </ul>
       </nav>
-      <p>&copy; 2025 Le Temps d'aimer</p>
-    </footer>
+    </div>
+
+    <!-- Fil d'Ariane (breadcrumb) -->
+    <nav aria-label="fil d'ariane" class="breadcrumb">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li>Page actuelle</li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+    <section class="hero">
+      <div class="hero-content">
+        <h2>Bienvenue sur Le Temps d'aimer</h2>
+        <p>Découvrez des profils compatibles avec vous</p>
+        <a href="assets/pages/catalogue.html" class="btn-inscription">
+          Voir le catalogue des célibataires
+        </a>
+      </div>
+    </section>
+
+    <section id="a-propos">
+      <h3>Pourquoi Le Temps d’aimer ?</h3>
+      <p>Notre mission est de réunir les personnes compatibles dans un espace bienveillant.</p>
+    </section>
+
+    <section class="temoignages">
+      <h3>Ils ont trouvé l’amour 💕</h3>
+      <!-- images, témoignages ou carrousel -->
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <nav>
+      <a href="#">Notre histoire</a>
+      <a href="contact.html">Contact</a>
+      <a href="mentionslegales.html">Mentions légales</a>
+      <a href="rgpd.html">RGPD</a>
+    </nav>
+    <p>&copy; 2025 Le Temps d'aimer</p>
+  </footer>
 
   <script src="assets/js/script.js"></script>
-  <script src="assets/js/quiz.js"></script>
-  <script src="assets/js/profil.js"></script>
+
 </body>
+
 </html>

@@ -3,9 +3,11 @@
 
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test de personnalité</title>
-  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Le Temps d'aimer</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="shortcut icon" href="assets/image/tempsdaimerlogo.png" type="image/x-icon">
 </head>
 
 <body>
@@ -19,8 +21,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Temps d'aimer</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="shortcut icon" href="assets/image/tempsdaimerlogo.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="shortcut icon" href="../image/tempsdaimerlogo.png" type="image/x-icon" />
 </head>
 
 <body>
@@ -28,16 +30,27 @@
   <header>
     <div class="container">
       <h1 class="sr-only">Test de personnalité</h1>
-      <img src="assets/image/tempsdaimerlogo.png" alt="Logo Le Temps d'aimer" class="logo" />
+      <a href="index.html">
+        <img src="../image/tempsdaimerlogo.png" alt="Logo" class="logo">
+      </a>
 
       <!-- Navigation -->
       <nav class="nav">
         <ul>
-          <li><a href="assets/pages/inscription.html">Inscription</a></li>
-          <li><a href="assets/pages/connexion.html">Connexion</a></li>
+          <li><a href="inscription.html">Inscription</a></li>
+          <li><a href="connexion.html">Connexion</a></li>
         </ul>
       </nav>
     </div>
+
+    <!-- Fil d'Ariane -->
+    <nav aria-label="fil d'ariane" class="breadcrumb">
+      <ul>
+        <li><a href="index.html">Accueil</a></li>
+        <li>Test de personnalité</li>
+      </ul>
+    </nav>
+
   </header>
 
   <main id="main-test" class="main-test">
@@ -48,16 +61,16 @@
   <footer class="footer">
     <nav>
       <a href="#">Notre histoire</a>
-      <a href="assets/pages/contact.html">Contact</a>
-      <a href="assets/pages/mentionslegales.html">Mentions légales</a>
-      <a href="assets/pages/rgpd.html">RGPD</a>
+      <a href="contact.html">Contact</a>
+      <a href="mentionslegales.html">Mentions légales</a>
+      <a href="rgpd.html">RGPD</a>
     </nav>
     <p>&copy; 2025 Le Temps d'aimer</p>
   </footer>
 
-  <script src="assets/js/script.js"></script>
+
   <script src="assets/js/quiz.js"></script>
-  <script src="assets/js/profil.js"></script>
+
 
 </body>
 
