@@ -1,8 +1,8 @@
-# sitederencontreDWWM
+# site-de-rencontre
 
 Structure du projet
 
-/SITEDERENCONTREDWWM
+/SITE-DE-RENCONTRE
 ├── assets/
 │   ├── css/
 │   │   └── style.css
@@ -30,6 +30,14 @@ Structure du projet
 Projet fil rouge
 
 Projet collaboratif 
-Sujet libre, avec mes collaborateurs nous avons choisis de développer un projet de site de rencontre pour plus de 50 ans. Projet de début de formation il y a une structure avec plusieurs pages HTML ayant permis de comprendre comment fonctionnent les chemins. 
+Sujet libre, avec mes collaborateurs, nous avons choisis de développer un projet de site de rencontre pour plus de 50 ans. Projet de début de formation il y a une structure avec plusieurs pages HTML ayant permis de comprendre comment fonctionnent les chemins. 
 
-Nous avons choisis la liberté de choix au niveau du design mais le respect commun de la structure de bases et projet évolutif. 
+Nous avons choisis la liberté de choix au niveau du design mais le respect commun des consignes du projet fil rouge. 
+- Création repository sur GitHub et clonage du dépôt sur les serveurs locaux des membres du groupe
+- Collaboration et communication sur le projet
+- Validation du projet fil rouge pour le CCP1 
+
+Projet personnel
+
+Je continue à développer le projet fil rouge en parallèle des autres projets sur la base du début de formation
+Le lien est disponible sur le projet portfolio 
