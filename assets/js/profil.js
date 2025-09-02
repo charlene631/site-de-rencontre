@@ -82,7 +82,7 @@ profils.forEach(profil=> {
     <p><strong>Âge :</strong> ${profil.age} ans</p>
     <p><strong>Ville :</strong> ${profil.ville}</p>
     <p><strong>Profession :</strong> ${profil.profession}</p>
-    <p><strong>Centres d’intérêt :</strong> ${profil.centresInteret.join(", ")}</p>
+    <p><strong>Centres d'intérêt :</strong> ${profil.centresInteret.join(", ")}</p>
   `;
       container.appendChild(carte);
   });

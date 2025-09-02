@@ -29,10 +29,10 @@ window.addEventListener('DOMContentLoaded', () => {
 
   if (form && username && password && connexionMessage) {
     form.addEventListener("submit", (event) => {
-      event.preventDefault(); // 🔒 Empêche le formulaire d'être envoyé vers un serveur
+      event.preventDefault(); // Empêche le formulaire d'être envoyé vers un serveur
 
       if (username.value === "admin" && password.value === "1234") {
-        localStorage.setItem("isConnected", "true"); // ✅ Simule la connexion
+        localStorage.setItem("isConnected", "true"); // Simule la connexion
         connexionMessage.textContent = "Connexion réussie, redirection...";
         connexionMessage.style.color = "green";
 
