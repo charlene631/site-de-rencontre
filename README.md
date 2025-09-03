@@ -39,5 +39,4 @@ Nous avons choisis la liberté de choix au niveau du design mais le respect comm
 
 Projet personnel
 
-Je continue à développer le projet fil rouge en parallèle des autres projets sur la base du début de formation
-Le lien est disponible sur le projet portfolio 
+Je créerai une application web de rencontre locale pour ma génération. 
