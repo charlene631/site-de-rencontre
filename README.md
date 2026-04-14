@@ -1,4 +1,9 @@
 # site-de-rencontre
+Contexte
+
+Ceci est un projet de formation, un site de rencontre statique fictif en HTML, CSS, JS pur, sans backend ni base de données.
+
+Vous pouvez tester le flux Inscription > Test de personnalité > Connexion > Catalogue
 
 Structure du projet
 
@@ -39,4 +44,4 @@ Nous avons choisis la liberté de choix au niveau du design mais le respect comm
 
 Projet personnel
 
-Je créerai une application web de rencontre locale pour ma génération. 
+Je créerai une application web de rencontre locale pour ma génération comme cible, mais accessible à tous.

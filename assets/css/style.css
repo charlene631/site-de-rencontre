@@ -362,3 +362,75 @@ footer a:hover {
   border: 1px solid #ccc;
   font-size: 1rem;
 }
+
+.quiz-progression {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 8px;
+}
+
+.quiz-barre-container {
+  width: 100%;
+  height: 6px;
+  background-color: #e0e0e0;
+  border-radius: 3px;
+  margin-bottom: 1.5rem;
+}
+
+.quiz-barre {
+  height: 6px;
+  background-color: #5b711d;
+  border-radius: 3px;
+  transition: width 0.3s ease;
+}
+
+.quiz-question {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.quiz-reponses {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.quiz-btn {
+  background-color: #f0f1f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  font-size: 15px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  width: 100%;
+  box-shadow: none;
+}
+
+.quiz-btn:hover {
+  background-color: #e0e4d4;
+}
+
+.quiz-resultat {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.quiz-pourcentage {
+  font-size: 3rem;
+  font-weight: 500;
+  margin: 0.5rem 0 1rem;
+}
+
+.quiz-btn-recommencer {
+  margin-top: 1rem;
+  background-color: #f0f1f0;
+  color: #333;
+  border: 1px solid #ccc;
+  width: auto;
+  padding: 0.6rem 1.2rem;
+}
