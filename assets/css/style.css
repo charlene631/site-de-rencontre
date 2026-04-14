@@ -214,22 +214,56 @@ button:hover,
 /* catalogue */
 .catalogue {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(clamp(240px, 40%, 1fr), 1fr));
-  gap: clamp(1rem, 3vw, 2rem);
-  margin: clamp(1rem, 4vw, 3rem);
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem;
 }
 
 .catalogue .carte {
-  border: 1px solid #3e4a1b;
+  border: 0.5px solid #ccc;
   border-radius: 12px;
-  margin: 3px;
-  background-color: white;
   overflow: hidden;
+  background-color: white;
+  margin: 0;
 }
 
 .catalogue .carte img {
   width: 100%;
-  border-bottom: 1px solid #3e4a1b;
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  display: block;
+  border-bottom: none;
+}
+
+.carte-infos {
+  padding: 8px;
+}
+
+.carte-nom {
+  font-weight: 500;
+  font-size: 15px;
+  margin: 0 0 2px;
+}
+
+.carte-meta {
+  font-size: 13px;
+  color: #666;
+  margin: 0 0 6px;
+}
+
+.carte-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.carte-tag {
+  font-size: 11px;
+  padding: 2px 7px;
+  border-radius: 20px;
+  background-color: #f0f1f0;
+  color: #555;
+  border: 0.5px solid #ccc;
 }
 
 /* témoignages */
@@ -288,4 +322,24 @@ footer a:hover {
   .catalogue {
     grid-template-columns: 1fr;
   }
+}
+
+.filtres label {
+  display: inline-block;
+}
+
+.filtres {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0 2rem;
+  flex-wrap: wrap;
+}
+
+.filtres select {
+  padding: 0.4rem 0.8rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
 }

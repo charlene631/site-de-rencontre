@@ -1,67 +1,87 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le Temps d'aimer</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../image/tempsdaimerlogo.png"
+      type="image/x-icon"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Le Temps d'aimer</title>
-  <link rel="stylesheet" href="../css/style.css">
-  <link rel="shortcut icon" href="../image/tempsdaimerlogo.png" type="image/x-icon">
-</head>
+  <body>
+    <!-- Header -->
+    <header>
+      <div class="container">
+        <h1 class="sr-only">Catalogue</h1>
+        <a href="../../index.html">
+          <img src="../image/logositederencontre.png" alt="Logo" class="logo" />
+        </a>
 
-<body>
-
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1 class="sr-only">Catalogue</h1>
-      <a href="../../index.html">
-       <img src="/assets/image/logositederencontre.png" alt="Logo" class="logo">
-      </a>
-
-      <!-- Navigation -->
-      <nav class="nav">
-        <ul>
-          <li><a href="inscription.html">Inscription</a></li>
-          <li><a href="connexion.html">Connexion</a></li>
-        </ul>
-      </nav>
-    </div>
-
-    <!-- Fil d'Ariane -->
-    <nav aria-label="fil d'ariane" class="breadcrumb">
-      <ul>
-        <li><a href="../../index.html">Accueil</a></li>
-        <li>Catalogue</li>
-      </ul>
-    </nav>
-
-  </header>
-
-  <!-- Main -->
-  <main id="main-catalogue">
-    <section class="catalogue des profils">
-      <h2>Catalogue des profils</h2>
-      <div class="catalogue">
-        <!-- Ici nous allons injecter les profils -->
+        <!-- Navigation -->
+        <nav aria-label="navigation" class="nav" role="navigation">
+          <ul>
+            <li><a href="inscription.html">Inscription</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+          </ul>
+        </nav>
       </div>
 
-    </section>
-  </main>
+      <!-- Fil d'Ariane -->
+      <nav aria-label="fil d'ariane" class="breadcrumb">
+        <ul>
+          <li><a href="../../index.html">Accueil</a></li>
+          <li>Catalogue</li>
+        </ul>
+      </nav>
+    </header>
 
-  <footer class="footer">
-    <nav>
-      <a href="#">Notre histoire</a>
-      <a href="contact.html">Contact</a>
-      <a href="mentionslegales.html">Mentions légales</a>
-      <a href="rgpd.html">RGPD</a>
-    </nav>
-    <p>&copy; 2025 Le Temps d'aimer</p>
-  </footer>
+    <!-- Main -->
+    <main id="main-catalogue">
+      <section class="catalogue-section">
+        <h2>Catalogue des profils</h2>
 
-  <script src="../js/profil.js"></script>
+        <div class="filtres">
+          <label for="filtre-genre">Genre :</label>
+          <select id="filtre-genre">
+            <option value="tous">Tous</option>
+            <option value="femme">Femme</option>
+            <option value="homme">Homme</option>
+          </select>
 
-</body>
+          <label for="filtre-ville">Ville :</label>
+          <select id="filtre-ville">
+            <option value="toutes">Toutes</option>
+            <option value="Anglet">Anglet</option>
+            <option value="Bayonne">Bayonne</option>
+            <option value="Biarritz">Biarritz</option>
+            <option value="Bordeaux">Bordeaux</option>
+            <option value="Capbreton">Capbreton</option>
+            <option value="Lyon">Lyon</option>
+            <option value="Marseille">Marseille</option>
+            <option value="Paris">Paris</option>
+            <option value="Toulouse">Toulouse</option>
+          </select>
+        </div>
 
+        <div class="catalogue"></div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav aria-label="navigation" class="footer-nav" role="navigation">
+        <a href="#">Notre histoire</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentionslegales.html">Mentions légales</a>
+        <a href="rgpd.html">RGPD</a>
+      </nav>
+      <p>&copy; 2025 Le Temps d'aimer</p>
+    </footer>
+
+    <script src="../js/profil.js"></script>
+  </body>
 </html>
