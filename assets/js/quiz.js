@@ -18,17 +18,17 @@ const questions = [
   {
     texte: "La famille dans votre vie",
     reponses: [
-      { texte: "Elle est centrale et je veux la partager", points: 2 },
       { texte: "Elle compte mais je préserve mon espace", points: 1 },
+      { texte: "Elle est centrale et je veux la partager", points: 2 },
       { texte: "Je préfère garder les sphères séparées", points: 0 },
     ],
   },
   {
     texte: "Votre façon de construire la confiance",
     reponses: [
+      { texte: "Je reste sur mes gardes, ça vient avec le temps", points: 0 },
       { texte: "Je prends le temps, la confiance est essentielle", points: 2 },
       { texte: "Je fais confiance assez naturellement", points: 1 },
-      { texte: "Je reste sur mes gardes, ça vient avec le temps", points: 0 },
     ],
   },
   {
@@ -42,16 +42,20 @@ const questions = [
   {
     texte: "Votre rapport à la communication",
     reponses: [
-      { texte: "Je crois au dialogue ouvert même sur les sujets difficiles", points: 2 },
       { texte: "Je communique quand c'est nécessaire", points: 1 },
+      {
+        texte: "Je crois au dialogue ouvert même sur les sujets difficiles",
+        points: 2,
+      },
       { texte: "Je préfère éviter les confrontations", points: 0 },
     ],
   },
   {
     texte: "La place de l'autre dans votre quotidien",
     reponses: [
-      { texte: "Je veux quelqu'un avec qui partager le quotidien", points: 2 },
       { texte: "J'aime avoir mon espace mais partager des moments", points: 1 },
+      { texte: "Je veux quelqu'un avec qui partager le quotidien", points: 2 },
+
       { texte: "Je tiens à mon indépendance avant tout", points: 0 },
     ],
   },
@@ -66,23 +70,32 @@ const questions = [
   {
     texte: "Votre expérience des relations passées",
     reponses: [
-      { texte: "J'en ai tiré des leçons et je suis prêt à avancer", points: 2 },
       { texte: "Je suis encore en train de faire le point", points: 1 },
+      { texte: "J'en ai tiré des leçons et je suis prêt à avancer", points: 2 },
       { texte: "Je préfère ne pas y penser pour l'instant", points: 0 },
     ],
   },
   {
     texte: "Le respect et les limites",
     reponses: [
-      { texte: "Les limites de l'autre sont aussi importantes que les miennes", points: 2 },
-      { texte: "Je respecte les limites mais j'aime tester les choses", points: 1 },
       { texte: "Je m'adapte selon les situations", points: 0 },
+      {
+        texte: "Les limites de l'autre sont aussi importantes que les miennes",
+        points: 2,
+      },
+      {
+        texte: "Je respecte les limites mais j'aime tester les choses",
+        points: 1,
+      },
     ],
   },
   {
     texte: "Votre disponibilité émotionnelle",
     reponses: [
-      { texte: "Je suis pleinement disponible pour une nouvelle relation", points: 2 },
+      {
+        texte: "Je suis pleinement disponible pour une nouvelle relation",
+        points: 2,
+      },
       { texte: "Je le suis, avec quelques réserves", points: 1 },
       { texte: "Je ne suis pas sûr d'être prêt", points: 0 },
     ],
@@ -90,8 +103,14 @@ const questions = [
   {
     texte: "Ce que vous attendez de ce site",
     reponses: [
-      { texte: "Trouver une personne avec qui construire quelque chose de vrai", points: 2 },
-      { texte: "Rencontrer des gens intéressants et voir ce qui se passe", points: 1 },
+      {
+        texte: "Trouver une personne avec qui construire quelque chose de vrai",
+        points: 2,
+      },
+      {
+        texte: "Rencontrer des gens intéressants et voir ce qui se passe",
+        points: 1,
+      },
       { texte: "Découvrir ce que ça peut apporter sans attentes", points: 0 },
     ],
   },
@@ -108,7 +127,7 @@ function afficherQuestion(index) {
   container.innerHTML = `
     <p class="quiz-progression">Question ${index + 1} sur ${questions.length}</p>
     <div class="quiz-barre-container">
-      <div class="quiz-barre" style="width: ${((index) / questions.length) * 100}%"></div>
+      <div class="quiz-barre" style="width: ${(index / questions.length) * 100}%"></div>
     </div>
     <h3 class="quiz-question">${q.texte}</h3>
     <div class="quiz-reponses">
@@ -118,7 +137,7 @@ function afficherQuestion(index) {
         <button class="quiz-btn" data-points="${r.points}">
           ${r.texte}
         </button>
-      `
+      `,
         )
         .join("")}
     </div>
